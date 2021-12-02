@@ -26,9 +26,6 @@ dependencies {
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    // This dependency is used by the application.
-    implementation("com.google.guava:guava:30.1.1-jre")
-
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
@@ -38,5 +35,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("com.java1337.adventofcode2021.AppKt")
+    mainClass.set("com.java1337.adventofcode2021.App")
 }
