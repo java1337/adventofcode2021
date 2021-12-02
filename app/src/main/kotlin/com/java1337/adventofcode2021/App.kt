@@ -24,7 +24,8 @@ class App {
         @JvmStatic
         fun main(args: Array<String>) {
             val challenges = listOf(
-                Day20211201.create()
+                Day20211201.create(),
+                Day20211202.create()
             )
             for (challenge in challenges) {
                 println()
