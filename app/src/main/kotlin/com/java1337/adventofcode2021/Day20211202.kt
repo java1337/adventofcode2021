@@ -96,14 +96,14 @@ class Day20211202(private val movementsRaw: List<String>): DailyChallenge {
         }
     }
 
-    val movementsParsed = Day20211202.parseMovements(movementsRaw)
+    private val movementsParsed = parseMovements(movementsRaw)
 
     override fun first(): String {
         var x = 0
         var y = 0
         movementsParsed.forEach { movement ->
-            x = x + (movement.direction.deltaX * movement.magnitude)
-            y = y + (movement.direction.deltaY * movement.magnitude)
+            x += (movement.direction.deltaX * movement.magnitude)
+            y += (movement.direction.deltaY * movement.magnitude)
         }
 
         return (x * y).toString()
@@ -114,9 +114,9 @@ class Day20211202(private val movementsRaw: List<String>): DailyChallenge {
         var y = 0
         var aim = 0
         movementsParsed.forEach { movement ->
-            aim = aim - (movement.direction.deltaY * movement.magnitude)
-            x = x + (movement.direction.deltaX * movement.magnitude)
-            y = y + (aim * movement.direction.deltaX * movement.magnitude)
+            aim -= (movement.direction.deltaY * movement.magnitude)
+            x += (movement.direction.deltaX * movement.magnitude)
+            y += (aim * movement.direction.deltaX * movement.magnitude)
             // println("aim=$aim, depth=$y, horizontal=$x")
         }
 
