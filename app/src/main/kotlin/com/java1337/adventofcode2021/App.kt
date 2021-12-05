@@ -25,7 +25,8 @@ class App {
         fun main(args: Array<String>) {
             val challenges = listOf(
                 Day20211201.create(),
-                Day20211202.create()
+                Day20211202.create(),
+                Day20211203.create()
             )
             for (challenge in challenges) {
                 println()
