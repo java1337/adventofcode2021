@@ -68,16 +68,16 @@ package com.java1337.adventofcode2021
 // have after following the planned course. What do you get if you multiply your final horizontal 
 // position by your final depth?
 
-enum class Direction(val deltaX: Int, val deltaY: Int) {
-    up(0,1),
-    down(0,-1),
-    forward(-1, 0),
-    back(1, 0)
-}
-
-data class Movement(val direction: Direction, val magnitude: Int)
-
 class Day20211202(private val movementsRaw: List<String>): DailyChallenge {
+
+    enum class Direction(val deltaX: Int, val deltaY: Int) {
+        up(0,1),
+        down(0,-1),
+        forward(-1, 0),
+        back(1, 0)
+    }
+
+    data class Movement(val direction: Direction, val magnitude: Int)
 
     companion object {
         fun create(): Day20211202 {

@@ -1,6 +1,5 @@
 package com.java1337.adventofcode2021
 
-import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -33,7 +32,6 @@ internal class Day20211203Test {
         assertEquals("198", actual)
     }
 
-    @Ignore
     @Test
     fun shouldReturnCorrectValueForSecondQuestion() {
         // given

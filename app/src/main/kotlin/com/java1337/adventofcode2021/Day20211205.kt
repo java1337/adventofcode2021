@@ -93,7 +93,6 @@ class Day20211205(input: List<String>) : DailyChallenge {
                 } else {
                     emptyList()
                 }
-            println("points = $returnMe")
             return returnMe
         }
 
