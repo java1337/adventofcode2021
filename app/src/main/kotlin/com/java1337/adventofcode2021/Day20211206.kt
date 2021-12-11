@@ -81,7 +81,7 @@ class Day20211206(private val input: List<String>) : DailyChallenge {
         }
     }
 
-    internal class LanternfishSchool(val rawSchoolDayZero: String) {
+    internal class LanternfishSchool(private val rawSchoolDayZero: String) {
         private val totalFishAtDay: Array<Long> = mutableListOf(0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L).toTypedArray()
 
         init {
@@ -107,7 +107,7 @@ class Day20211206(private val input: List<String>) : DailyChallenge {
     }
 
 
-    fun calclulate(days: Int): String {
+    private fun calclulate(days: Int): String {
         val school = LanternfishSchool(input[0])
         for (i in 0 until days) {
             school.anotherDay()

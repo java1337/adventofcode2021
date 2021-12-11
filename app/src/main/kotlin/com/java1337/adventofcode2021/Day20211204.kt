@@ -149,7 +149,6 @@ class Day20211204(private val input: List<String>) : DailyChallenge {
     private val boards = (0 until boardCount).map { boardIndex ->
         val boardStartingIndex = 2 + (6 * boardIndex)
         val boardEndingIndex = boardStartingIndex + 5
-        println("board[$boardIndex] is from $boardStartingIndex to $boardEndingIndex")
         val subList = input.subList(boardStartingIndex, boardEndingIndex)
         Board(subList)
     }
