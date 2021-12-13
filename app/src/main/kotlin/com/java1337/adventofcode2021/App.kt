@@ -31,6 +31,7 @@ class App {
                 Day20211205.create(),
                 Day20211206.create(),
                 Day20211207.create(),
+                Day20211208.create(),
             )
             for (challenge in challenges) {
                 println()
