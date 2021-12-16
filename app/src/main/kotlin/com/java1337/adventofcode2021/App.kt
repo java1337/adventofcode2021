@@ -17,9 +17,9 @@ class App {
 
     companion object {
 
-        private const val RESET = "\u001B[0m"
-        private const val RED   = "\u001B[31m"
-        private const val CYAN  = "\u001B[36m"
+        const val RESET = "\u001B[0m"
+        const val RED   = "\u001B[31m"
+        const val CYAN  = "\u001B[36m"
 
         @JvmStatic
         fun main(args: Array<String>) {
@@ -33,6 +33,7 @@ class App {
                 Day20211207.create(),
                 Day20211208.create(),
                 Day20211209.create(),
+                Day20211210.create(),
             )
             for (challenge in challenges) {
                 println()
