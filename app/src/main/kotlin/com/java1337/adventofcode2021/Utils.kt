@@ -43,7 +43,7 @@ fun List<String>.intGrid(default: Int): Grid<Int> {
     var height = 0
     forEach { line ->
         var width = 0
-        line.split("").map(String::toInt).forEach { n ->
+        line.split("").map { println(it); it.toInt() }.forEach { n ->
             grid[p(height, width++)] = n
         }
         height++
